@@ -1,11 +1,9 @@
 function fibonacci (n) {
-  const fib = [0, 1]
+  const fibonacciSequence = [0, 1]
   for (let i=2; i<n; i++) {
-    fib[i] = fib[i-1] + fib[i-2]
+    fibonacciSequence[i] = fibonacciSequence[i-1] + fibonacciSequence[i-2]
   }
-  return fib
+  return fibonacciSequence
 }
 
-console.log(fibonacci(2))
-console.log(fibonacci(3))
-console.log(fibonacci(7))
+//Approx. time complexity (worst case) is O(n) - it increases as the number of n increases
